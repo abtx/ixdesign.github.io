@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / analyze</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="card-/-4" transform="translate(-122.000000, -59.000000)" stroke="#FFFFFF">
+            <g id="icon-/-analyze">
+                <g transform="translate(123.000000, 60.000000)">
+                    <g>
+                        <path d="M67,66.9563233 L4.78571429,66.9563233 C2.144,66.9563233 0,64.8185036 0,62.1737288 L0,0" id="Stroke-441" stroke-width="2"></path>
+                        <path d="M14.3571429,52.6085398 L14.3571429,28.6955671" id="Stroke-442" stroke-width="2"></path>
+                        <path d="M28.7142857,9.56518905 L28.7142857,52.6085398" id="Stroke-443" stroke-width="2"></path>
+                        <path d="M43.0714286,52.6085398 L43.0714286,43.0433507" id="Stroke-444" stroke-width="2"></path>
+                        <path d="M57.4285714,52.6085398 L57.4285714,23.9129726" id="Stroke-445" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

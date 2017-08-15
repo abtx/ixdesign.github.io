@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / speech bubble</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="card-/-4" transform="translate(-119.000000, -59.000000)" stroke="#FFFFFF">
+            <g id="icon-/-speech-bubble">
+                <g transform="translate(120.000000, 60.000000)">
+                    <g>
+                        <path d="M50.7764286,62.1689462 C45.7322857,65.2058937 39.8219286,66.9563233 33.5,66.9563233 C14.9984286,66.9563233 0,51.9676721 0,33.4781617 C0,14.9886512 14.9984286,0 33.5,0 C52.0015714,0 67,14.9886512 67,33.4781617 C67,40.1116203 65.0713571,46.295515 61.7452857,51.4941952" id="Stroke-412" stroke-width="2"></path>
+                        <polyline id="Stroke-413" stroke-width="2" points="52.6433357 62.1737288 67.0004786 66.9563233 62.2147643 52.6085398"></polyline>
+                        <path d="M23.92905,28.6955671 L43.0719071,28.6955671" id="Stroke-414" stroke-width="2"></path>
+                        <path d="M23.92905,43.0433507 L33.5004786,43.0433507" id="Stroke-415" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

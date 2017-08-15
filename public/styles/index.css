@@ -1,0 +1,348 @@
+/*
+1. -- CORE
+1.1 Variables
+  1.1.1 Colors
+  1.1.2 Font sizes
+  1.1.3 Spacing
+1.2 Core properties
+
+2. -- SECTIONS
+2.1. Header
+2.2. Introduction
+2.3. Core values
+2.4. Design and Development
+2.5. People
+2.6. Contact
+2.7. Footer
+*/
+@keyframes plane_in {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 40px, -120px); }
+  to {
+    opacity: 1;
+    transform: translate3d(0 0 0); } }
+@keyframes plane_out {
+  from {
+    opacity: 1;
+    transform: translate3d(0 0 0); }
+  to {
+    opacity: 0;
+    transform: translate3d(40px, -40px, -120px); } }
+/* 1 --------------------------- CORE --------------------------- */
+/* 1.1. Variables */
+@font-face {
+  font-family: "Thonburi-Bold";
+  src: url("Thonburi-Bold.ttf"), url("Thonburi-Bold.eot");
+  /* IE */ }
+/* 1.2.  Core properties */
+html, body {
+  box-sizing: border-box;
+  color: #686868;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  -webkit-backface-visibility: hidden; }
+
+* {
+  box-sizing: inherit; }
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 2rem; }
+  h1 span {
+    font-weight: 200; }
+
+p {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 35px; }
+  p strong, p b {
+    font-weight: 400; }
+
+/* 1.3. Helpers */
+.section_padding {
+  padding: 4rem 3rem; }
+  .section_padding#des_and_dev {
+    padding: 4rem 3rem 0 3rem; }
+
+.light_font {
+  font-weight: 200; }
+
+.logo {
+  background: url("../images/logo.svg") center left no-repeat;
+  background-size: 2rem;
+  display: block; }
+
+svg {
+  margin: auto;
+  display: block; }
+
+.hidden {
+  display: none; }
+
+/* 2 --------------------------- SECTIONS --------------------------- */
+/* 2.1. Header */
+header {
+  height: 6rem;
+  background: transparent;
+  position: absolute;
+  width: 100%; }
+  header > div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 3rem; }
+    header > div .logo {
+      width: 2rem;
+      height: 2rem; }
+    header > div a {
+      text-decoration: none;
+      color: #077EFF; }
+
+/* 2.2. Introduction */
+#introduction {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  left: 0;
+  min-height: 100vh;
+  top: 0;
+  width: 100%; }
+  #introduction #illustration:after {
+    content: '';
+    background: url("../images/intro_illustration.svg") center left 33% no-repeat;
+    background-size: cover;
+    height: 102%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
+  #introduction #description {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6rem; }
+    #introduction #description a {
+      text-decoration: none;
+      color: white; }
+      #introduction #description a .contact {
+        background-color: #FF6D6D;
+        border-radius: 40px;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 100;
+        letter-spacing: .02rem;
+        overflow: hidden;
+        padding: 1rem 2rem;
+        position: relative;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+        margin-top: 2rem; }
+        #introduction #description a .contact span {
+          padding-left: 1.4rem; }
+        #introduction #description a .contact:before {
+          content: '';
+          background: url("../images/icon/paper_plane.svg") no-repeat top left;
+          height: 1.3rem;
+          position: absolute;
+          opacity: 1;
+          left: 1.4rem;
+          top: .9rem;
+          width: 1.3rem; }
+        #introduction #description a .contact:after {
+          content: '';
+          background: url("../images/icon/paper_plane.svg") no-repeat top left;
+          height: 1.3rem;
+          position: absolute;
+          left: 1.4rem;
+          top: .9rem;
+          opacity: 0;
+          width: 1.3rem; }
+        #introduction #description a .contact:hover {
+          background-color: #FFBB00;
+          box-shadow: inset -2px -6px 20px 0px rgba(86, 73, 61, 0.1);
+          transition: all .2s ease-in-out; }
+          #introduction #description a .contact:hover:before {
+            animation: plane_out .3s ease-in-out forwards;
+            -webkit-animation: plane_out .3s ease-in-out forwards; }
+          #introduction #description a .contact:hover:after {
+            animation: plane_in .3s ease-in-out forwards;
+            -webkit-animation: plane_in .3s ease-in-out forwards; }
+
+/* 2.3. Core values */
+#core_values {
+  background-color: #71B5FF;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-gap: 1.33%;
+  text-align: center; }
+  #core_values .card {
+    box-shadow: -7px 3px 20px 0px rgba(45, 105, 171, 0.17);
+    border-radius: 7px;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+    color: white; }
+    #core_values .card:hover {
+      box-shadow: -7px 3px 20px 0px rgba(45, 105, 171, 0.33); }
+    #core_values .card h2 {
+      font-size: 18px;
+      font-weight: 200;
+      letter-spacing: 1px; }
+    #core_values .card p {
+      font-size: 13px;
+      font-weight: 200;
+      line-height: 21px; }
+    #core_values .card i {
+      display: block;
+      height: 5rem;
+      margin: 2rem auto;
+      width: 100%; }
+    #core_values .card i.analyze {
+      background: url("../images/icon/analyze.svg") no-repeat center center; }
+    #core_values .card i.chat {
+      background: url("../images/icon/chat.svg") no-repeat center center; }
+    #core_values .card i.tasks {
+      background: url("../images/icon/tasks.svg") no-repeat center center; }
+    #core_values .card i.briefcase {
+      background: url("../images/icon/briefcase.svg") no-repeat center center; }
+
+/* 2.4. Design and Development */
+/* 2.5. People */
+#people {
+  background-color: #E7E7E7;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  grid-gap: 1%; }
+  #people .person_card {
+    display: flex; }
+    #people .person_card i {
+      display: inline-block;
+      flex: 1;
+      height: 7rem;
+      width: 23rem; }
+    #people .person_card .body {
+      flex: 4;
+      padding-right: 3rem; }
+      #people .person_card .body .name {
+        font-size: 24px;
+        font-weight: 200;
+        margin-bottom: .4rem; }
+      #people .person_card .body .role {
+        font-size: 14px;
+        font-weight: 500; }
+      #people .person_card .body .role, #people .person_card .body .description {
+        margin-bottom: 1rem; }
+      #people .person_card .body .description, #people .person_card .body .links {
+        font-size: 12px;
+        font-weight: 200; }
+      #people .person_card .body .description {
+        line-height: 20px; }
+      #people .person_card .body ul.links {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0; }
+        #people .person_card .body ul.links li {
+          padding-right: 1.4rem; }
+          #people .person_card .body ul.links li a {
+            font-weight: 500;
+            color: #077EFF;
+            text-decoration: none; }
+    #people .person_card i#artur {
+      background: url("../images/people/artur_janas.png") no-repeat left center; }
+    #people .person_card i#aleks {
+      background: url("../images/people/placeholder.png") no-repeat left center; }
+
+/* 2.6. Contact */
+#contact {
+  position: relative; }
+  #contact:before {
+    content: '';
+    background: url("../images/pattern/triangle.svg") repeat-x center center;
+    display: block;
+    height: 1rem;
+    margin: -.3rem -3rem 0 -3rem;
+    position: absolute;
+    width: 100%;
+    top: -.5rem;
+    transform: rotate(180deg); }
+  #contact > div {
+    display: flex;
+    align-items: flex-start;
+    position: relative; }
+    #contact > div a {
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      background-color: white;
+      color: #077EFF;
+      margin: 0;
+      padding-right: 1rem;
+      position: relative;
+      text-decoration: none;
+      white-space: nowrap;
+      z-index: 2; }
+      #contact > div a span {
+        font-weight: 200; }
+    #contact > div .trail {
+      background: url("../images/pattern/trail.svg") repeat-x right center;
+      display: block;
+      height: .5rem;
+      margin: .7rem 15rem 0 0;
+      position: relative;
+      width: 100%;
+      z-index: 1; }
+      #contact > div .trail:before {
+        content: '';
+        background: -moz-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, white 0%, rgba(255, 255, 255, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+        /* IE6-9 */
+        height: inherit;
+        left: 0;
+        position: absolute;
+        width: 1rem; }
+    #contact > div:after {
+      content: '';
+      background: url("../images/icon/paper_plane_red.svg") no-repeat right center;
+      display: block;
+      height: 7rem;
+      left: 0;
+      right: 0;
+      position: absolute;
+      top: -5.3rem;
+      width: 100%;
+      z-index: 1; }
+
+/* 2.7. Footer */
+footer {
+  align-items: center;
+  background-color: #E7E7E7;
+  display: flex;
+  font-size: 11px;
+  position: relative; }
+  footer .logo {
+    background-size: 1rem;
+    height: 1rem;
+    width: 1.4rem; }
+  footer:before {
+    content: '';
+    background: url("../images/pattern/triangle.svg") repeat-x center center;
+    display: block;
+    height: 1rem;
+    margin: -.3rem -3rem 0 -3rem;
+    position: absolute;
+    width: 100%;
+    top: 0; }
+
+/*# sourceMappingURL=index.css.map */

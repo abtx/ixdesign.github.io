@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="239px" height="105px" viewBox="0 0 239 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / paper_plane_trail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ix-design-website" transform="translate(-1129.000000, -3998.000000)">
+            <g id="website" transform="translate(-1093.000000, -11.000000)">
+                <g id="contact-+-footer" transform="translate(0.000000, 3981.000000)">
+                    <g id="contact">
+                        <g id="plane_w_trail">
+                            <g id="icon-/-paper_plane_trail" transform="translate(2219.000000, 0.000000)">
+                                <g stroke-width="1" fill-rule="evenodd" transform="translate(207.500000, 33.500000) scale(-1, 1) translate(-207.500000, -33.500000) translate(172.000000, 0.000000)" id="Triangle-1-+-Triangle-3">
+                                    <g>
+                                        <polygon id="Triangle-1" fill="#FF6D6D" transform="translate(35.422842, 33.611297) rotate(-54.000000) translate(-35.422842, -33.611297) " points="19.3438931 3.42396366 53.8371908 63.1052938 41.9863134 60.7652192 27.3581882 63.7986303 26.7907481 58.1623982 17.0084937 56.374634"></polygon>
+                                        <polygon id="Triangle-2" fill="#BC4856" transform="translate(57.061240, 50.537509) rotate(-54.000000) translate(-57.061240, -50.537509) " points="64.6601859 50.3322432 50.0364101 53.3486377 49.4622947 47.7263806"></polygon>
+                                        <polygon id="Triangle-2" fill="#DC5868" transform="translate(32.647358, 37.443492) rotate(-54.000000) translate(-32.647358, -37.443492) " points="21.3388291 7.27343603 43.9558869 64.5825191 29.3301397 67.6135482 32.3924824 62.6001631"></polygon>
+                                    </g>
+                                </g>
+                                <path d="M186,60 C184,74.3333333 174.5,79.6666667 157.5,76 C132,70.5 140.5,96 138.5,89.5 C137,85 143.5,108 157.5,85.5 C152.833333,69.1666667 144.666667,63.3333333 133,68 C123,73.6666667 122.333333,84 131,99 C136,107 133.166667,116.166667 122.5,126.5 C110.5,134.166667 101,131.333333 94,118 C84,99 74,99 65,99 C56,99 45,106.5 31.5,114.5 C26.8333333,119.166667 17.6666667,122.166667 4,123.5" id="Path-13" stroke="#FF6D6D" stroke-width="3" stroke-linecap="round" stroke-dasharray="1,8"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

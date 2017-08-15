@@ -1,0 +1,176 @@
+@mixin heading {
+  font-size: $heading;
+  font-weight: 200;
+}
+@mixin section_heading {
+  font-size: $section_heading;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  span {
+    font-weight: 200;
+  }
+}
+@mixin section_body {
+  font-size: $section_body;
+  font-weight: 100;
+  line-height: 35px;
+}
+@mixin button {
+  background-color: $fire;
+  border-radius: 40px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: .02rem;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  span {
+    padding-left: 1.4rem;
+  }
+  &:before {
+    content: '';
+    background: url('../images/icon/paper_plane.svg') no-repeat top left;
+    height: 1.3rem;
+    position: absolute;
+    opacity: 1;
+    left: 1.4rem;
+    top: .9rem;
+    width: 1.3rem;
+  }
+  &:after {
+    content: '';
+    background: url('../images/icon/paper_plane.svg') no-repeat top left;
+    height: 1.3rem;
+    position: absolute;
+    left: 1.4rem;
+    top: .9rem;
+    opacity: 0;
+    width: 1.3rem;
+  }
+  &:hover {
+    background-color: $sun;
+    box-shadow: inset -2px -6px 20px 0px rgba(86, 73, 61, 0.1);
+    transition: all .2s ease-in-out;
+    &:before {
+      animation: plane_out .3s ease-in-out forwards;
+      -webkit-animation: plane_out .3s ease-in-out forwards;
+    }
+    &:after {
+      animation: plane_in .3s ease-in-out forwards;
+      -webkit-animation: plane_in .3s ease-in-out forwards;
+    }
+  }
+}
+@keyframes plane_in {
+	from {
+    opacity: 0;
+		transform: translate3d(-40px, 40px, -120px);
+	}
+	to {
+    opacity: 1;
+		transform: translate3d(0 0 0);
+	}
+}
+@keyframes plane_out {
+	from {
+    opacity: 1;
+		transform: translate3d(0 0 0);
+	}
+	to {
+    opacity: 0;
+		transform: translate3d(40px, -40px, -120px);
+	}
+}
+@mixin card {
+  box-shadow: -7px 3px 20px 0px rgba(45, 105, 171, 0.17);
+  border-radius: 7px;
+  padding: 1rem;
+  transition: all .2s ease-in-out;
+  &:hover {
+    box-shadow: -7px 3px 20px 0px rgba(45, 105, 171, 0.33);
+  }
+  h2 {
+    font-size: $card_heading;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: $card_content;
+    font-weight: 200;
+    line-height: 21px;
+  }
+  i {
+    display: block;
+    height: 5rem;
+    margin: 2rem auto;
+    width: 100%;
+  }
+}
+@mixin person_card {
+  display: flex;
+  i {
+    display: inline-block;
+    flex: 1;
+    height: 7rem;
+    width: 23rem;
+  }
+  .body {
+    flex: 4;
+    padding-right: 3rem;
+    .name {
+      font-size: $person_heading;
+      font-weight: 200;
+      margin-bottom: .4rem;
+    }
+    .role {
+      font-size: $person_subheading;
+      font-weight: 500;
+    }
+    .role, .description {
+      margin-bottom: 1rem;
+    }
+    .description, .links {
+      font-size: $person_body;
+      font-weight: 200;
+    }
+    .description {
+      line-height: 20px;
+    }
+    ul.links {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      padding: 0;
+      li {
+        padding-right: 1.4rem;
+        a {
+          font-weight: 500;
+          color: $link;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@mixin triangles($position) {
+  &:before {
+    content: '';
+    background: url('../images/pattern/triangle.svg') repeat-x center center;
+    display: block;
+    height: 1rem;
+    margin: -.3rem -3rem 0 -3rem;
+    position: absolute;
+    width: 100%;
+    @if $position == 'top' {
+      top: 0;
+    } @else {
+      top: -.5rem;
+      transform: rotate(180deg);
+    }
+  }
+}

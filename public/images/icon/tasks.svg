@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="65px" viewBox="0 0 69 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / tasks</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="card-/-4" transform="translate(-122.000000, -62.000000)" stroke="#FFFFFF">
+            <g id="icon-/-tasks">
+                <g transform="translate(123.000000, 60.000000)">
+                    <g>
+                        <path d="M15.4615385,23.8709758 L5.15384615,23.8709758 C2.30892308,23.8709758 0,21.5635579 0,18.7204894 L0,8.4195166 C0,5.5764481 2.30892308,3.26903019 5.15384615,3.26903019 L15.4615385,3.26903019 C18.3064615,3.26903019 20.6153846,5.5764481 20.6153846,8.4195166 L20.6153846,18.7204894 C20.6153846,21.5635579 18.3064615,23.8709758 15.4615385,23.8709758 Z" id="Stroke-180" stroke-width="2"></path>
+                        <path d="M36.0769231,13.570003 L67,13.570003" id="Stroke-181" stroke-width="2"></path>
+                        <path d="M15.4615385,65.0748671 L5.15384615,65.0748671 C2.30892308,65.0748671 0,62.7674492 0,59.9243807 L0,49.6234079 C0,46.7803394 2.30892308,44.4729215 5.15384615,44.4729215 L15.4615385,44.4729215 C18.3064615,44.4729215 20.6153846,46.7803394 20.6153846,49.6234079 L20.6153846,59.9243807 C20.6153846,62.7674492 18.3064615,65.0748671 15.4615385,65.0748671 Z" id="Stroke-182" stroke-width="2"></path>
+                        <path d="M36.0769231,54.7738943 L67,54.7738943" id="Stroke-183" stroke-width="2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

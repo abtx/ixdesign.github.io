@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / paper plane</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="ix-design-website" transform="translate(-927.000000, -833.000000)" stroke="#FFFFFF">
+            <g id="website" transform="translate(-203.000000, -11.000000)">
+                <g id="section-1,-intro">
+                    <g id="section-1-copy" transform="translate(1097.000000, 233.000000)">
+                        <g id="button-/-default" transform="translate(0.000000, 591.000000)">
+                            <g id="icon-/-paper-plane" transform="translate(33.000000, 21.000000)">
+                                <g>
+                                    <polygon id="Stroke-363" points="19 0 0 8.13754889 6.78571429 12.2063233 10.8571429 18.9876141"></polygon>
+                                    <path d="M19,0 L6.78571429,12.2063233" id="Stroke-364"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
