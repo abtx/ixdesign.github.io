@@ -328,7 +328,7 @@
         lastNode.fx = null;
         lastNode.fy = null;
         node.filter((d, i) => i === lastNode.index)
-          .transition().duration(800).ease(d3.easePolyOut)
+          .transition().duration(400).ease(d3.easePolyOut)
           .tween('circleOut', () => {
             let irl = d3.interpolateNumber(lastNode.r, lastNode.radius);
             return (t) => {
@@ -342,7 +342,7 @@
 
       // if (!d3.event.active) simulation.alphaTarget(0.5).restart();
 
-    d3.transition().duration(800).ease(d3.easePolyOut)
+    d3.transition().duration(400).ease(d3.easePolyOut)
         .tween('moveIn', () => {
           console.log('tweenMoveIn', currentNode);
           let ix = d3.interpolateNumber(currentNode.x, centerX);
@@ -382,7 +382,7 @@
         focusedNode.fx = null;
         focusedNode.fy = null;
         simulation.alphaTarget(0.2).restart();
-        d3.transition().duration(800).ease(d3.easePolyOut)
+        d3.transition().duration(400).ease(d3.easePolyOut)
           .tween('moveOut', function () {
             console.log('tweenMoveOut', focusedNode);
             let ir = d3.interpolateNumber(focusedNode.r, focusedNode.radius);
