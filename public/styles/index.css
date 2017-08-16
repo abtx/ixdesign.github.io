@@ -132,6 +132,8 @@ header {
       #introduction #description a .contact {
         background-color: #FF6D6D;
         border-radius: 40px;
+        cursor: pointer;
+        cursor: hand;
         display: inline-block;
         font-size: 13px;
         font-weight: 100;
