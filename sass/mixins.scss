@@ -20,6 +20,8 @@
 @mixin button {
   background-color: $fire;
   border-radius: 40px;
+  cursor: pointer;
+  cursor: hand;
   display: inline-block;
   font-size: 13px;
   font-weight: 100;
