@@ -319,11 +319,8 @@ footer {
   }
   #core_values {
     grid-template-columns: repeat(2, 49%);
-    .card {
+    .card:nth-child(1), .card:nth-child(2) {
       margin-bottom: 1rem;
-      &:last-of-type {
-        margin-bottom: 0;
-      }
     }
   }
   #contact {
@@ -362,5 +359,13 @@ footer {
   }
   #core_values, #people {
     grid-template-columns: repeat(1, 100%);
+  }
+  #core_values {
+    .card {
+      margin-bottom: 1rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }
