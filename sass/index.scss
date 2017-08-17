@@ -46,15 +46,6 @@ $person_body: 12px;
 // 1.1.3 Spacing
 $header-height: 6rem;
 
-// 1.1.4 Web fonts
-
-@font-face{
-    font-family: "Thonburi-Bold";
-    src: url('Thonburi-Bold.ttf'),
-    url('Thonburi-Bold.eot'); /* IE */
-}
-
-
 /* 1.2.  Core properties */
 html, body {
   box-sizing: border-box;
