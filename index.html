@@ -157,12 +157,6 @@
       .force('x', d3.forceX(centerX ).strength(strength))
       .force('y', d3.forceY(centerY ).strength(strength));
 
-    // reduce number of circles on mobile screen due to slow computation
-    if ('matchMedia' in window && window.matchMedia('(max-device-width: 767px)').matches) {
-      data = data.filter(el => {
-        return el.value >= 50;
-      });
-    }
 
     let root = d3.hierarchy({ children: data })
       .sum(d => d.value);

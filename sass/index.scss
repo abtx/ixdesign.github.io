@@ -272,3 +272,90 @@ footer {
   }
   @include triangles('top');
 }
+
+@media (max-width: 1280px) {
+  #people {
+    grid-template-columns: repeat(2, 75%);
+  }
+}
+
+@media (max-width: 1160px) {
+  #introduction #description {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    > div {
+      justify-content: flex-end;
+      .contact {
+        display: none;
+      }
+    }
+  }
+  #introduction {
+    grid-template-columns: repeat(1, 100%);
+    min-height: auto;
+    margin-top: 35%;
+    #description {
+      background-color: white;
+      justify-content: flex-start;
+      padding: 2rem;
+    }
+  }
+  #introduction #illustration:after {
+    height: 35%;
+  }
+  #core_values {
+    grid-template-columns: repeat(2, 49%);
+    .card {
+      margin-bottom: 1rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  #contact {
+    &:before {
+      top: -.4rem;
+    }
+    > div {
+      .trail  {
+        display: none;
+      }
+      &:after {
+        background-size: 8rem;
+        height: 10rem;
+      }
+    }
+  }
+  #contact:before, footer:before {
+    width: 105%;
+  }
+  .section_padding {
+    padding: 4rem 2rem;
+    &#des_and_dev {
+      padding: 4rem 2rem 0 2rem;
+    }
+  }
+}
+
+
+@media (max-width: 650px) {
+  #introduction {
+    margin-top: 55%;
+  }
+  #introduction #illustration:after {
+    height: 55%;
+    margin-top: -6rem;
+  }
+  #core_values, #people {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

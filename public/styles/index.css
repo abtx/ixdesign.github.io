@@ -225,6 +225,7 @@ header {
       display: inline-block;
       flex: 1;
       height: 7rem;
+      min-width: 140px;
       width: 23rem; }
     #people .person_card .body {
       flex: 4;
@@ -346,5 +347,68 @@ footer {
     position: absolute;
     width: 100%;
     top: 0; }
+
+@media (max-width: 1280px) {
+  #people {
+    grid-template-columns: repeat(2, 75%); } }
+@media (max-width: 1160px) {
+  #introduction #description {
+    padding: 0 3rem; } }
+@media (max-width: 960px) {
+  body {
+    overflow-x: hidden; }
+
+  header {
+    position: absolute;
+    top: 0; }
+    header > div {
+      justify-content: flex-end; }
+      header > div .contact {
+        display: none; }
+
+  #introduction {
+    grid-template-columns: repeat(1, 100%);
+    min-height: auto;
+    margin-top: 35%; }
+    #introduction #description {
+      background-color: white;
+      justify-content: flex-start;
+      padding: 2rem; }
+
+  #introduction #illustration:after {
+    height: 35%; }
+
+  #core_values {
+    grid-template-columns: repeat(2, 49%); }
+    #core_values .card {
+      margin-bottom: 1rem; }
+      #core_values .card:last-of-type {
+        margin-bottom: 0; }
+
+  #contact:before {
+    top: -.4rem; }
+  #contact > div .trail {
+    display: none; }
+  #contact > div:after {
+    background-size: 8rem;
+    height: 10rem; }
+
+  #contact:before, footer:before {
+    width: 105%; }
+
+  .section_padding {
+    padding: 4rem 2rem; }
+    .section_padding#des_and_dev {
+      padding: 4rem 2rem 0 2rem; } }
+@media (max-width: 650px) {
+  #introduction {
+    margin-top: 55%; }
+
+  #introduction #illustration:after {
+    height: 55%;
+    margin-top: -6rem; }
+
+  #core_values, #people {
+    grid-template-columns: repeat(1, 100%); } }
 
 /*# sourceMappingURL=index.css.map */
