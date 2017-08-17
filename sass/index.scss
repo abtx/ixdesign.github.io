@@ -63,7 +63,7 @@ h1 {
 p {
   @include section_body;
   strong, b {
-    font-weight: 400;
+    font-weight: 600;
   }
 }
 
@@ -275,6 +275,18 @@ footer {
 @media (max-width: 1160px) {
   #introduction #description {
     padding: 0 3rem;
+  }
+}
+
+@media (max-height: 760px) {
+  #introduction #description {
+    padding: 0 11rem 0 0;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
   }
 }
 
