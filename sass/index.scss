@@ -104,6 +104,8 @@ header {
     justify-content: space-between;
     margin-top: 2rem;
     padding: 0 3rem;
+    position: relative;
+    z-index: 10;
     .logo {
       width: 2rem;
       height: 2rem;

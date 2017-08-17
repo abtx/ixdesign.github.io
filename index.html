@@ -11,6 +11,8 @@
     <meta name="author" content="IX Desgin UK Limited">
     <link rel="stylesheet" href="public/styles/index.css">
     <link rel="stylesheet" href="public/styles/des_and_dev.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css"/>
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,7 +30,7 @@
       </div>
     </header>
     <!--  data-aos-delay="100" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600" -->
-    <section id="introduction">
+    <section id="introduction" data-aos-delay="100" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="600">
       <section id="illustration" alt="isomporphic illustration of a all in one desktop"></section>
       <section id="description" alt="description">
         <h1>Designing Cutting Edge Interfaces</h1>
@@ -86,7 +88,7 @@
             <ul class="links" alt="my links">
               <li><a href="https://uk.linkedin.com/in/artur-janas-b2b78747" target="_blank">LinkedIn</a></li>
               <li><a href="https://github.com/abtx" target="_blank">Github</a></li>
-              <li><a href="http://arturjanas.co.uk" target="_blank">Website</a></li>
+              <li><a href="https://www.behance.net/abato" target="_blank">Behace</a></li>
             </ul>
           </div>
         </div>
@@ -410,5 +412,10 @@
         .select('circle')
           .attr('r', d => d.r);
     }
+  </script>
+  <script>
+    AOS.init({
+      disable: 'mobile'
+    });
   </script>
 </html>

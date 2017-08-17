@@ -31,10 +31,6 @@
     transform: translate3d(40px, -40px, -120px); } }
 /* 1 --------------------------- CORE --------------------------- */
 /* 1.1. Variables */
-@font-face {
-  font-family: "Thonburi-Bold";
-  src: url("Thonburi-Bold.ttf"), url("Thonburi-Bold.eot");
-  /* IE */ }
 /* 1.2.  Core properties */
 html, body {
   box-sizing: border-box;
@@ -95,7 +91,9 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    padding: 0 3rem; }
+    padding: 0 3rem;
+    position: relative;
+    z-index: 10; }
     header > div .logo {
       width: 2rem;
       height: 2rem; }
