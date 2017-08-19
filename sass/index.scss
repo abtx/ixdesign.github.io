@@ -291,9 +291,6 @@ footer {
 }
 
 @media (max-width: 960px) {
-  body {
-    overflow-x: hidden;
-  }
   header {
     position: absolute;
     top: 0;
@@ -322,6 +319,9 @@ footer {
     .card:nth-child(1), .card:nth-child(2) {
       margin-bottom: 1rem;
     }
+  }
+  #people .person_card {
+    flex-wrap: wrap;
   }
   #contact {
     &:before {

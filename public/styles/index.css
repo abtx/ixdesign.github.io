@@ -362,9 +362,6 @@ footer {
   p {
     font-size: 14px; } }
 @media (max-width: 960px) {
-  body {
-    overflow-x: hidden; }
-
   header {
     position: absolute;
     top: 0; }
@@ -389,6 +386,9 @@ footer {
     grid-template-columns: repeat(2, 49%); }
     #core_values .card:nth-child(1), #core_values .card:nth-child(2) {
       margin-bottom: 1rem; }
+
+  #people .person_card {
+    flex-wrap: wrap; }
 
   #contact:before {
     top: -.4rem; }
