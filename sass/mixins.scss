@@ -162,8 +162,10 @@
     background: url('../images/pattern/triangle.svg') repeat-x center center;
     display: block;
     height: 1rem;
-    margin: -.3rem -3rem 0 -3rem;
+    left: 0;
+    margin: -.3rem 0 0 0;
     position: absolute;
+    right: 0;
     width: 100%;
     @if $position == 'top' {
       top: 0;

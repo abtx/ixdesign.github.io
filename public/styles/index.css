@@ -304,8 +304,10 @@ header {
     background: url("../images/pattern/triangle.svg") repeat-x center center;
     display: block;
     height: 1rem;
-    margin: -.3rem -3rem 0 -3rem;
+    left: 0;
+    margin: -.3rem 0 0 0;
     position: absolute;
+    right: 0;
     width: 100%;
     top: -.5rem;
     transform: rotate(180deg); }
@@ -379,8 +381,10 @@ footer {
     background: url("../images/pattern/triangle.svg") repeat-x center center;
     display: block;
     height: 1rem;
-    margin: -.3rem -3rem 0 -3rem;
+    left: 0;
+    margin: -.3rem 0 0 0;
     position: absolute;
+    right: 0;
     width: 100%;
     top: 0; }
 
@@ -439,7 +443,7 @@ footer {
     height: 10rem; }
 
   #contact:before, footer:before {
-    width: 105%; }
+    width: 100%; }
 
   .section_padding {
     padding: 4rem 2rem; }
