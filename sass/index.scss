@@ -90,6 +90,20 @@ svg {
 .hidden {
   display: none;
 }
+.bounce {
+  animation: bounce 2s ease-in-out infinite;
+  transform: translateY(5px);
+}
+.opacity.hidden {
+    opacity: 0;
+}
+.opacity {
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+     opacity: 1;
+}
 /* 2 --------------------------- SECTIONS --------------------------- */
 
 /* 2.1. Header */
@@ -150,6 +164,17 @@ header {
         margin-top: 2rem;
       }
     }
+  }
+  #scroll-ind {
+    background: url('../images/ui/angle-down.svg') center center no-repeat;
+    background-size: 2rem;
+    bottom: 2rem;
+    display: block;
+    height: 2rem;
+    left: 50%;
+    margin-left: -1rem;
+    position: absolute;
+    width: 2rem;
   }
 }
 /* 2.3. Core values */
@@ -309,6 +334,9 @@ footer {
       background-color: white;
       justify-content: flex-start;
       padding: 2rem;
+    }
+    #scroll-ind {
+      display: none;
     }
   }
   #introduction #illustration:after {

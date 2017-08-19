@@ -35,6 +35,7 @@
         With a great focus on UX and UI, I code my designs and work on frontend. For projects that require thorough backend expertise I'm ready to help with outsourcing.
         </p>
         <a href="mailto:hello@ix-design.uk" target="_blank"><div class="contact"><span>Get in touch about <b>UX + UI design</b></span></div></a>
+        <div id="scroll-ind" class="bounce opacity"></div>
       </section>
     </section>
     <section id="core_values" class="section_padding">
@@ -408,6 +409,17 @@
         .attr('transform', d => `translate(${d.x},${d.y})`)
         .select('circle')
           .attr('r', d => d.r);
+    }
+    // remove .bounce on scroll
+    window.onscroll = function() {
+      var el = document.getElementById('scroll-ind');
+      if ( window.pageYOffset > 100 ) {
+        el.classList.remove("bounce");
+        el.classList.add("hidden");
+      } else {
+        el.classList.add("bounce");
+        el.classList.remove("hidden");
+      }
     }
   </script>
 </html>
