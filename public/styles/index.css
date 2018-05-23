@@ -83,7 +83,7 @@ p {
 
 .logo {
   background: url("../images/logo.svg") center left no-repeat;
-  background-size: 2rem;
+  background-size: 1.2rem;
   display: block; }
 
 svg {
@@ -114,20 +114,23 @@ header {
   background: transparent;
   position: absolute;
   width: 100%; }
-  header > div {
+  header .contact {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 2rem;
     padding: 0 3rem;
     position: relative;
     z-index: 10; }
-    header > div .logo {
-      width: 2rem;
-      height: 2rem; }
-    header > div a {
+    header .contact a {
       text-decoration: none;
       color: #077EFF; }
+  header .logo {
+    height: 2rem;
+    left: 3rem;
+    position: fixed;
+    top: 2rem;
+    width: 2rem; }
 
 /* 2.2. Introduction */
 #introduction {
@@ -201,8 +204,8 @@ header {
             animation: plane_in .3s ease-in-out forwards;
             -webkit-animation: plane_in .3s ease-in-out forwards; }
   #introduction #scroll-ind {
-    background: url("../images/ui/angle-down.svg") center center no-repeat;
-    background-size: 2rem;
+    background: url("../images/ui/mouse.svg") center center no-repeat;
+    background-size: 1.2rem;
     bottom: 2rem;
     display: block;
     height: 2rem;
@@ -373,7 +376,7 @@ footer {
   font-size: 11px;
   position: relative; }
   footer .logo {
-    background-size: 1rem;
+    background-size: .8rem;
     height: 1rem;
     width: 1.4rem; }
   footer:before {
