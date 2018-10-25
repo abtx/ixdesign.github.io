@@ -1,38 +1,31 @@
   // Based loosely from this D3 bubble graph https://bl.ocks.org/mbostock/4063269
   // And this Forced directed diagram https://bl.ocks.org/mbostock/4062045
   let data = [{
-    cat: 'Design', name: 'Sketch', value: 30,
+    cat: 'Design', name: 'Sketch', value: 34,
     icon: 'public/images/logos/sketch.svg',
     desc: `
       Sketch is a modern design and wireframing tool of choice for many designers these days.
     `
   },
   {
-    cat: 'Frontend', name: 'Angular', value: 25,
+    cat: 'Frontend', name: 'Angular', value: 38,
     icon: 'public/images/logos/angular.svg',
     desc: `
       AngularJS is a structural framework for dynamic web apps
     `
   },
   {
-    cat: 'Tools', name: 'Atom', value: 2,
+    cat: 'Tools', name: 'Atom', value: 12,
     icon: 'public/images/logos/atom.svg',
     desc: `
       IDE of choice.
     `
   },
   {
-    cat: 'Frameworks', name: 'Bootstrap', value: 5,
+    cat: 'Frameworks', name: 'Bootstrap', value: 25,
     icon: 'public/images/logos/bootstrap.svg',
     desc: `
     A framework of frontend and design solutions ready to use.
-    `
-  },
-  {
-    cat: 'Tools', name: 'Google Chrome & Devtool', value: 12,
-    icon: 'public/images/logos/chrome-devtools.svg',
-    desc: `
-    For analysing and debugging apps and websites.
     `
   },
   {
@@ -50,7 +43,7 @@
     `
   },
   {
-    cat: 'Tools', name: 'Git', value: 17,
+    cat: 'Tools', name: 'Git', value: 22,
     icon: 'public/images/logos/git.svg',
     desc: `
     Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.
@@ -65,7 +58,7 @@
     `
   },
   {
-    cat: 'Languages', name: 'JavaScript', value: 10,
+    cat: 'Languages', name: 'JavaScript', value: 33,
     icon: 'public/images/logos/javascript.svg',
     desc: `
     The most common use of JavaScript is to add client-side behavior to HTML pages, also known as Dynamic HTML (DHTML).
@@ -78,6 +71,14 @@
     A preprocessor language to be compiled to CSS. Not used as often anymore.
     `
   },
+
+  {
+    cat: 'Platforms', name: 'Nodejs', value: 20,
+    icon: 'public/images/logos/nodejs.svg',
+    desc: `
+    As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications.
+    `
+  },
   {
     cat: 'Preprocessors', name: 'Sass', value: 18,
     icon: 'public/images/logos/sass.svg',
@@ -86,11 +87,18 @@
     `
   },
   {
-    cat: 'Libraries', name: 'Lodash', value: 10,
+    cat: 'Libraries', name: 'Lodash', value: 22,
     icon: 'public/images/logos/lodash.svg',
     desc: `
     Lodash is a JavaScript library which provides utility functions for
     common programming tasks using the functional programming paradigm.
+    `
+  },
+  {
+    cat: 'Platforms', name: 'React', value: 10,
+    icon: 'public/images/logos/react.svg',
+    desc: `
+    React is a JavaScript library for building user interfaces by Facebook.
     `
   },
   {
@@ -101,17 +109,10 @@
     `
   },
   {
-    cat: 'Design', name: 'Invision', value: 13,
+    cat: 'Design', name: 'Invision', value: 18,
     icon: 'public/images/logos/invision.svg',
     desc: `
     Invision is an online collaborative tool for creating user journeys and interactive mockups.
-    `
-  },
-  {
-    cat: 'Design', name: 'Figma', value: 7,
-    icon: 'public/images/logos/figma.svg',
-    desc: `
-    Figma is a modern online collaborative interface design tool with interactive mockup capabilities.
     `
   },
   {
@@ -127,13 +128,6 @@
     icon: 'public/images/logos/illustrator.svg',
     desc: `
     A vector graphics editor, useful for complex illustrations.
-    `
-  },
-  {
-    cat: 'Frameworks', name: 'Materialize', value: 6,
-    icon: 'public/images/logos/materialize.svg',
-    desc: `
-    A modern responsive front-end framework based on Material Design.
     `
   }
 ];

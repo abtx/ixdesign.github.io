@@ -163,7 +163,7 @@
     display: block;
     height: 1rem;
     left: 0;
-    margin: -.3rem 0 0 0;
+    margin: -.2rem 0 0 0;
     position: absolute;
     right: 0;
     width: 100%;
@@ -197,4 +197,9 @@
   60% {
     transform:translateY(-2px);
   }
+}
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
 }
