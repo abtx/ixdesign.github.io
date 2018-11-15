@@ -400,15 +400,9 @@ footer {
 @media (max-width: 1160px) {
   #introduction #description {
     padding: 0 3rem; } }
-@media (max-height: 760px) {
-  #introduction #description {
-    padding: 0 11rem 0 0; }
-
-  h1 {
-    font-size: 18px; }
-
-  p {
-    font-size: 14px; } }
+@media (max-height: 1024px) {
+  #introduction #description a .contact {
+    margin: 0 0 3rem 0; } }
 @media (max-width: 960px) {
   header {
     position: absolute;
@@ -426,6 +420,13 @@ footer {
       background-color: white;
       justify-content: flex-start;
       padding: 2rem; }
+      #introduction #description a {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        white-space: nowrap; }
+        #introduction #description a .contact {
+          margin: 0 0 2rem 0; }
     #introduction #scroll-ind {
       display: none; }
 
